@@ -11,5 +11,5 @@ with open(os.path.join(repo_directory, "hello.html"), "w") as f:
 os.chdir(repo_directory)
 os.system("git add .")
 os.system(f'git commit -m "Daily commit: {datetime.now().strftime("%Y-%m-%d")}"')
-os.system(f"git push {GIT_REMOTE} {GIT_BRANCH}")
+os.system(f"git push {git_remote} {git_branch}")
 
