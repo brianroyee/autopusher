@@ -8,8 +8,22 @@ repo_directory = os.getenv('repo_directory')
 git_remote = os.getenv('git_remote')
 git_branch = os.getenv('git_branch')
 
+
+html_content = f"""
+<htmL
+<body>
+    <div class="container">
+        <h1>Hello World!</h1>
+        <p>Brother, this push happened on <span class="time">{current_time}"</span>.</p>
+        <p>Keep that streak going! 💪</p>
+    </div>
+</body>
+</html>
+"""
+
+
 with open(os.path.join(repo_directory, "hello.html"), "w") as f:
-        f.write(f"<html><body><h1>Hello World!</h1><p>{datetime.now().strftime('%Y-%m-%d')}</p></body></html>")
+        f.write(html_content)
 
 os.chdir(repo_directory)
 os.system("git add hello.html")
