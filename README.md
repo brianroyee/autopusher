@@ -16,9 +16,7 @@ A simple Python script that automatically creates a commit and pushes to GitHub 
 
 ### 2. Setup
 1. Clone this repository or save the script to your desired location
-2. Edit these variables in the script:
-   ```python
-   repo_directory = "/home/teknikal/Desktop/orbital simulator/autopush/"
-   git_remote = "origin"
-   git_branch = "main"
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
