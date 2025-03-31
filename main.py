@@ -7,14 +7,14 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 repo_directory = os.getenv('repo_directory')
 git_remote = os.getenv('git_remote')
 git_branch = os.getenv('git_branch')
-
+current_time = datetime.now().strftime('%A, %B %d, %Y at %I:%M %p')
 
 html_content = f"""
 <htmL
 <body>
-    <div class="container">
+    <div">
         <h1>Hello World!</h1>
-        <p>Brother, this push happened on <span class="time">{current_time}"</span>.</p>
+        <p>Brother, this push happened on <span class="time">{current_time}"</span></p>
         <p>Keep that streak going! 💪</p>
     </div>
 </body>
