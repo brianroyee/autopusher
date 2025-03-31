@@ -1,9 +1,12 @@
 import os
 from datetime import datetime
+from dotenv import load_dotenv
 
-repo_directory = "/home/teknikal/Desktop/orbital simulator/autopush/"
-git_remote = "origin"
-git_branch = "main"
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
+
+repo_directory = os.getenv('repo_directory')
+git_remote = os.getenv('git_remote')
+git_branch = os.getenv('git_branch')
 
 with open(os.path.join(repo_directory, "hello.html"), "w") as f:
         f.write(f"<html><body><h1>Hello World!</h1><p>{datetime.now().strftime('%Y-%m-%d')}</p></body></html>")
