@@ -19,4 +19,10 @@ A simple Python script that automatically creates a commit and pushes to GitHub 
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+3. Create an .env file and save your repo details
+    ```.env
+    repo_directory = "/root/directory/blahblah"
+    git_remote = "origin"
+    git_branch = "main"
+
 
