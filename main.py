@@ -17,6 +17,10 @@ html_content = f"""
         <p>Brother, this push happened on <span class="time">{current_time}"</span></p>
         <p>Keep that streak going! 💪</p>
     </div>
+
+    <div>
+        <h1>Ninte thantha alla ente thantha</h1>
+    </div>
 </body>
 </html>
 """
